@@ -14,7 +14,7 @@ let nbChoisi;
  * @param bonNb
  * @param nbChoisi
  */
-function verif(bonNb,nbChoisi){
+function verif(bonNb,nbChoisi){//TODO
     //création de la variable retour
     let instruction = document.createElement('div');
     //compare
