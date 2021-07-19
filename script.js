@@ -21,15 +21,15 @@ function verif(bonNb,nbChoisi){//TODO
     if(nbChoisi<bonNb){
         //c'est plus
         instruction.textContent = "Coup " +nbCoups+" : C'est plus que "+nbChoisi;
-        instruction.className ="instructions plus";
+        instruction.className ="instruction plus";
     }else if(nbChoisi>bonNb){
         //c'est moins
         instruction.textContent ="Coup " +nbCoups+" : C'est moins que "+nbChoisi;
-        instruction.className ="instructions moins";
+        instruction.className ="instruction moins";
     }else{
         //c'est le juste prix
         instruction.textContent ="Coup " +nbCoups+" : "+nbChoisi+" est le juste prix !";
-        instruction.className ="instructions fini";
+        instruction.className ="instruction fini";
     }
     //Ajouter le résultat à l'affichage
     document.querySelector('#instructions').prepend(instruction);
