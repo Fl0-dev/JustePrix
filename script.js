@@ -20,11 +20,20 @@ function verif(bonNb,nbChoisi){//TODO
     //compare
     if(nbChoisi<bonNb){
         //c'est plus
+        instruction.textContent = "Coup " +nbCoups+" : C'est plus que "+nbChoisi;
+        instruction.className ="instructions plus";
     }else if(nbChoisi>bonNb){
         //c'est moins
+        instruction.textContent ="Coup " +nbCoups+" : C'est moins que "+nbChoisi;
+        instruction.className ="instructions moins";
     }else{
         //c'est le juste prix
+        instruction.textContent ="Coup " +nbCoups+" : "+nbChoisi+" est le juste prix !";
+        instruction.className ="instructions fini";
     }
+    //Ajouter le résultat à l'affichage
+    document.querySelector('#instructions').prepend(instruction);
+
 }
 
 //Vérifier que l'utilisateur donne bien un nombre
